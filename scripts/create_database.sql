@@ -6,7 +6,7 @@ USE empresa_consultoria
 CREATE TABLE Empresa (
     id_empresa INT IDENTITY(1,1) NOT NULL,
     nome VARCHAR(100) NOT NULL,
-    endereco VARCHAR(200) NOT NULL
+    endereco VARCHAR(200) NOT NULL,
     PRIMARY KEY (id_empresa)
 )
 
@@ -15,7 +15,7 @@ CREATE TABLE Consultor (
     nome VARCHAR(100) NOT NULL,
     cpf CHAR(11) UNIQUE NOT NULL,
     especializacao VARCHAR(100) NOT NULL,
-    PRIMARY KEY (id_consultor),
+    PRIMARY KEY (id_consultor)
 )
 
 CREATE TABLE Projeto (
